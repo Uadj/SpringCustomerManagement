@@ -1,7 +1,7 @@
 package project;
 
 public class MemberApp {
-    public static void main(String[] args){
+    public static void main2(String[] args){
         MemberService memberService = new MemberServiceImpl();
         Member member = new Member(1L,"memberA", Grade.VIP);
         memberService.join(member);
