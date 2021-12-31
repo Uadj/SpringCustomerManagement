@@ -33,7 +33,10 @@ dependencies {
 	
 	compile('org.springframework.boot:spring-boot-starter-web')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
-	
+	testRuntimeOnly("org.junit.platform:junit-platform-launcher:1.7.0") 
+    testImplementation('org.junit.jupiter:junit-jupiter:5.7.0') 
+    testRuntimeOnly("org.junit.vintage:junit-vintage-engine:5.7.0")
+
 	/* Web 
 	compile('org.springframework.boot:spring-boot-starter-data-rest')
 	compile('org.springframework.boot:spring-boot-starter-hateoas')

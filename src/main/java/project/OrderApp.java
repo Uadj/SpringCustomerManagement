@@ -1,13 +1,16 @@
 package project;
 
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import project.order.Order;
 import project.order.OrderService;
 import project.order.OrderServiceImpl;
-
+import project.AppConfig;
+@SpringBootApplication
 public class OrderApp {
     public static void main(String[] args){
-        MemberService memberService = new MemberServiceImpl();
-        OrderService orderService = new OrderServiceImpl();
+        AppConfig appConfig = new AppConfig();
+        MemberService memberService =  appConfig.memberService();
+        OrderService orderService =  appConfig.orderService();
         
         Long memberId = 1L;
         Member member = new Member(memberId, "memberA", Grade.VIP);
