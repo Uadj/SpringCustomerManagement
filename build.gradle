@@ -23,6 +23,8 @@ repositories {
 }
 
 dependencies {
+	implementation 'org.junit.jupiter:junit-jupiter:5.7.0'
+
 	/*
 	spring-boot-starter 관련 라이브러리에 대한 설명은 아래의 URL를 참고해주세요.
 	For a description of the spring-boot-starter related library, please refer to the following URL.
@@ -33,9 +35,6 @@ dependencies {
 	
 	compile('org.springframework.boot:spring-boot-starter-web')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
-	testRuntimeOnly("org.junit.platform:junit-platform-launcher:1.7.0") 
-    testImplementation('org.junit.jupiter:junit-jupiter:5.7.0') 
-    testRuntimeOnly("org.junit.vintage:junit-vintage-engine:5.7.0")
 
 	/* Web 
 	compile('org.springframework.boot:spring-boot-starter-data-rest')
